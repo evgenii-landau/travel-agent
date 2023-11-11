@@ -1,0 +1,66 @@
+.hint-discover {
+	display: flex;
+	padding: 12px;
+	gap: 16px;
+	max-width: 324px;
+
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0px 4px 34px 0px rgba(50, 75, 104, 0.17);
+
+	&__picture {
+		border-radius: 8px;
+		overflow: hidden;
+		flex-shrink: 0;
+	}
+
+	&__desc {
+		flex-grow: 1;
+		gap: 4px;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%;
+	}
+
+	&__rating {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 4px;
+
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 21px */
+
+		&::before {
+			content: '';
+
+			width: 17px;
+			height: 16px;
+
+			background-image: url(./../img/icons/star-small.svg);
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__price {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%;
+
+		i {
+			color: var(--accent);
+			font-style: normal;
+		}
+	}
+}

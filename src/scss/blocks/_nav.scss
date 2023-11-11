@@ -1,0 +1,33 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 34px;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 24px;
+
+		a {
+			color: #181818;
+		}
+
+		a:hover,
+		a.active {
+			color: #35aff4;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		gap: 12px;
+	}
+}
+
+.active {
+}
+
+.btn-signup {
+}
