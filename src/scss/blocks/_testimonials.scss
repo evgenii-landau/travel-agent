@@ -1,0 +1,39 @@
+.testimonials {
+	&__grid {
+		overflow: hidden;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 32px;
+	}
+
+	&__col {
+		display: grid;
+		gap: 32px;
+
+		animation: slideUp 20s linear infinite;
+
+		&:nth-child(2) {
+			padding-top: 70px;
+		}
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(0%);
+	}
+	95% {
+		transform: translateY(-50%);
+		opacity: 1;
+		filter: blur(0px);
+	}
+	97% {
+		opacity: 0;
+		filter: blur(10px);
+	}
+	98% {
+		transform: translateY(0%);
+		opacity: 1;
+		filter: blur(0px);
+	}
+}

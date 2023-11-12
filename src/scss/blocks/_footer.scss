@@ -1,14 +1,35 @@
 .footer {
+	padding: 80px 0;
 	background: #181818;
-	padding: 50px 0;
-	font-size: 32px;
-	color: #fff;
+	color: #ffffff;
 
-	h1 {
-		font-size: 32px;
+	a {
+		color: var(--text-white);
 	}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+		gap: 128px;
+	}
+
+	&__copyright {
+		display: grid;
+		gap: 24px;
+		max-width: 300px;
+	}
+
+	&__logo {
+	}
+
+	&__text {
+	}
+
+	&__nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+		gap: 40px;
 	}
 }

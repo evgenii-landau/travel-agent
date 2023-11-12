@@ -1,0 +1,29 @@
+.partners {
+	padding: 60px 0;
+	position: relative;
+	z-index: -1;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		align-items: center;
+	}
+
+	&__title {
+		color: var(--text-muted);
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 140%; /* 33.6px */
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+}
+
+.title-4 {
+}

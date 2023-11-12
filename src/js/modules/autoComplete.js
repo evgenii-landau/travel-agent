@@ -1,5 +1,5 @@
-import autoComplete from '@tarekraafat/autocomplete.js'
-import countryList from './../helper/countryList.js'
+import autoComplete from '@tarekraafat/autocomplete.js';
+import countryList from './../helper/countryList.js';
 
 function autoCompleteFunc() {
 	const autoCompleteJS = new autoComplete({
@@ -7,24 +7,24 @@ function autoCompleteFunc() {
 		placeHolder: 'e.g Bali, Indonesia',
 		data: {
 			src: countryList,
-			cache: true
+			cache: true,
 		},
 		resultItem: {
-			highlight: true
+			highlight: true,
 		},
 		events: {
 			input: {
-				selection: event => {
-					const selection = event.detail.selection.value
-					autoCompleteJS.input.value = selection
-				}
-			}
+				selection: (event) => {
+					const selection = event.detail.selection.value;
+					autoCompleteJS.input.value = selection;
+				},
+			},
 		},
 		resultList: {
-			maxResults: 10
+			maxResults: 10,
 		},
-		searchEngine: 'strict'
-	})
+		searchEngine: 'strict',
+	});
 }
 
-export default autoCompleteFunc
+export default autoCompleteFunc;

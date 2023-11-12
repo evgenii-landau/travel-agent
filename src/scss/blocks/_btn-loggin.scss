@@ -9,7 +9,7 @@
 
 	border-radius: 8px;
 	border: 1px solid #b7b7b7;
-	background: #fff;
+	background: var(--text-white);
 
 	color: #454545;
 	font-size: 16px;
@@ -17,7 +17,8 @@
 	font-weight: 450;
 	line-height: 150%;
 
-	transition: background-color 0.2s ease-in, color 0.2s ease-in, opacity 0.2s ease-in;
+	transition: background-color 0.2s ease-in, color 0.2s ease-in,
+		opacity 0.2s ease-in;
 }
 
 .btn-login:hover,
