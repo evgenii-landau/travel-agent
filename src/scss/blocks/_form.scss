@@ -10,6 +10,10 @@
 	border: 1px solid rgba(144, 144, 144, 0.3);
 	background: #fff;
 
+	@include mediaMobile {
+		grid-template-columns: 1fr;
+	}
+
 	&__lable {
 		padding-left: 36px;
 
@@ -27,6 +31,10 @@
 			font-weight: 500;
 			line-height: normal;
 		}
+
+		&--calendar {
+			background-image: url(./../img/icons/calendar.svg);
+		}
 	}
 
 	&__input {
@@ -41,11 +49,28 @@
 	}
 
 	&__btn {
+		padding: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border-radius: 10px;
+		background-color: var(--accent);
+
+		transition: opacity 0.2s ease-in;
+
+		&:hover {
+			opacity: 0.8;
+		}
 	}
 
 	&__devider {
 		height: 24px;
 		width: 1px;
 		background: #909090;
+
+		@include mediaMobile {
+			display: none;
+		}
 	}
 }

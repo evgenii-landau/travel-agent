@@ -1,11 +1,24 @@
 .discover {
-	padding: 60px;
+	padding: 60px 0;
+
+	@include mediaMobile {
+		padding: 30px 0;
+	}
 
 	&__grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 80px;
 		align-items: center;
+
+		@include mediaTablet {
+			grid-template-columns: 1fr;
+			gap: 40px;
+		}
+
+		@include mediaMobileXS {
+			gap: 20px;
+		}
 	}
 
 	&__title {
@@ -14,22 +27,67 @@
 
 	&__text {
 		margin-bottom: 40px;
+
+		@include mediaMobileXS {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__picture {
 		position: relative;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: fit-content;
+		justify-self: center;
+
+		@include mediaTablet {
+			grid-row: -1 / 1;
+		}
 	}
 
 	&__picture-hint {
 		position: absolute;
-		z-index: 1;
+		z-index: 9;
 		top: 90px;
 		left: 40px;
+
+		@include mediaLaptop {
+			top: 35px;
+			left: 15px;
+		}
+
+		@include mediaMobile {
+			display: none;
+		}
+
+		@include mediaMobileXS {
+			top: 15px;
+			left: 10px;
+		}
 	}
 
 	&__picture-scroll {
 		position: absolute;
-		right: 15px;
+		right: 30px;
 		bottom: 20px;
+
+		@include mediaLaptop {
+			right: 15px;
+			bottom: 0px;
+		}
+
+		@include mediaTablet {
+			right: 30px;
+			bottom: 15px;
+		}
+
+		@include mediaMobile {
+			width: 30%;
+			right: 7px;
+			bottom: 0px;
+		}
 	}
 }

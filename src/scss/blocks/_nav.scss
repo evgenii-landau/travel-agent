@@ -16,18 +16,39 @@
 
 		a:hover,
 		a.active {
-			color: #35aff4;
+			color: var(--accent);
+		}
+
+		@include mediaMobile {
+			display: none;
 		}
 	}
 
 	&__btns {
 		display: flex;
 		gap: 12px;
+
+		@include mediaMobile {
+			display: none;
+		}
+	}
+
+	&__logo {
+		flex-shrink: 0;
 	}
 }
 
-.active {
+.nav__icon {
+	display: none;
+
+	@include mediaMobile {
+		display: block;
+	}
 }
 
 .btn-signup {
+	transition: opacity 0.2s ease-in;
+	&:hover {
+		opacity: 0.8;
+	}
 }

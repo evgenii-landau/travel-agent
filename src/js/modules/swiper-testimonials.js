@@ -6,7 +6,7 @@ function swiperFunc() {
 		direction: 'vertical',
 		// slidesPerView: 4,
 		slidesPerView: 'auto',
-		spaceBetween: 32,
+		spaceBetween: 0,
 		grabCursor: true,
 		a11y: false,
 		freeMode: true,
