@@ -3,6 +3,10 @@
 	background: #181818;
 	color: #ffffff;
 
+	@include mediaMobile {
+		padding: 40px;
+	}
+
 	a {
 		color: var(--text-white);
 	}
@@ -12,6 +16,11 @@
 		grid-template-columns: 1fr 1fr;
 		align-items: start;
 		gap: 128px;
+
+		@include mediaMobile {
+			grid-template-columns: 1fr;
+			gap: 60px;
+		}
 	}
 
 	&__copyright {
@@ -31,5 +40,9 @@
 		grid-template-columns: 1fr 1fr;
 		align-items: start;
 		gap: 40px;
+
+		@include mediaMobile {
+			grid-row: -1 / 1;
+		}
 	}
 }

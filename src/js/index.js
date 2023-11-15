@@ -1,11 +1,11 @@
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
 
-// import autoComplete from './modules/autoComplete.js';
-// autoComplete();
+import autoComplete from './modules/autoComplete.js';
+autoComplete();
 
-// import easepick from './modules/easpick.js';
-// easepick();
+import easepick from './modules/easpick.js';
+easepick();
 
 import swiper from './modules/swiper-popular.js';
 swiper();

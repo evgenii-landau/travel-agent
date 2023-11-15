@@ -3,6 +3,11 @@
 	align-items: center;
 	gap: 12px;
 
+	@include mediaMobileS {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
 	&__input {
 		flex-grow: 1;
 		padding: 12px;
