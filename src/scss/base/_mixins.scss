@@ -1,29 +1,29 @@
 @mixin mediaLaptop() {
-	@media only screen and (max-width: 1439px) {
+	@media (max-width: 1439px) {
 		@content;
 	}
 }
 
 @mixin mediaTablet() {
-	@media only screen and (max-width: 1023px) {
+	@media (max-width: 1023px) {
 		@content;
 	}
 }
 
 @mixin mediaMobile() {
-	@media only screen and (max-width: 767px) {
+	@media (max-width: 767px) {
 		@content;
 	}
 }
 
 @mixin mediaMobileS() {
-	@media only screen and (max-width: 475px) {
+	@media (max-width: 475px) {
 		@content;
 	}
 }
 
 @mixin mediaMobileXS() {
-	@media only screen and (max-width: 374px) {
+	@media (max-width: 374px) {
 		@content;
 	}
 }
