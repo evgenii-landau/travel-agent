@@ -21,6 +21,10 @@
 		}
 	}
 
+	&__desc {
+		z-index: -3;
+	}
+
 	&__title {
 		margin-bottom: 24px;
 	}
@@ -45,6 +49,7 @@
 
 		@include mediaTablet {
 			grid-row: -1 / 1;
+			z-index: -3;
 		}
 	}
 

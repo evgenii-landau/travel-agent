@@ -12,6 +12,7 @@
 
 		a {
 			color: #181818;
+			transition: all 0.2s ease-in;
 		}
 
 		a:hover,
@@ -19,7 +20,7 @@
 			color: var(--accent);
 		}
 
-		@include mediaMobile {
+		@include mediaTablet {
 			display: none;
 		}
 	}
@@ -28,7 +29,7 @@
 		display: flex;
 		gap: 12px;
 
-		@include mediaMobile {
+		@include mediaTablet {
 			display: none;
 		}
 	}
@@ -41,7 +42,7 @@
 .nav__icon {
 	display: none;
 
-	@include mediaMobile {
+	@include mediaTablet {
 		display: block;
 	}
 }
